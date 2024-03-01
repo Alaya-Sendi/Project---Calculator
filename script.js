@@ -24,8 +24,11 @@ $(document).ready(function () {
         var parts = currentInput.split(' ');
         var num1 = parseFloat(parts[0]);
         var num2 = parseFloat(parts[2]);
+        var operation = parts[1];
 
-        switch (currentOperator) {
+
+
+        switch (operation) {
             case '+':
                 currentInput = num1 + num2;
                 break;
